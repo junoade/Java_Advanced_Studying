@@ -18,12 +18,21 @@ public class ClassLoaderTest_01 {
     }
 
     public void printClassLoader() throws ClassNotFoundException{
+
+
         System.out.println("ClassLoader of ArrayList : " + ArrayList.class.getClassLoader());
-        /***
+        /*
          * null 로 출력된다.
          * 그 이유는 ArrayList 가 정의된 클래스가 Bootstrap Class Loader에 의해 로드되는데,
          * Bootstrap ClassLoader는 C나 C++ 과 같은 native code로 작성되었기 때문이다.
          * https://www.baeldung.com/java-classloaders
+         */
+
+        System.out.println("ClassLoader of this Class : " + ClassLoaderTest_01.class.getClassLoader());
+        /*
+         * jdk.internal.loader.ClassLoaders$AppClassLoader@주소
+         * 와 같은 형태로 출력된다.
+         * Application 레벨의 Class Loader에 의해 로드되기 때문.
          */
     }
 }
