@@ -19,12 +19,15 @@ public class Refactoring_pl_newID {
     }
 
     public String solution(String new_id){
+
+        /* Rule 관련*/
         String regexStep2 = "[^a-z0-9-_.]";
         String regexStep3 = "[.]{2,}";
         String regexStep4 = "^[.]|[.]$";
 
         String puncEmpty = "";
         String puncDot = ".";
+
         final int MAX_LENGTH = 16;
         final int MIN_LENGTH = 2;
         return new User(new_id)
