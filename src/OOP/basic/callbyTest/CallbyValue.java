@@ -1,4 +1,4 @@
-package OOP.basic;
+package OOP.basic.callbyTest;
 
 public class CallbyValue {
     public static void main(String[] args) {
