@@ -1,4 +1,4 @@
-package Whiteship_livestudy.week1;
+package whiteship_livestudy.week1;
 
 public class Student {
     private String s_name;

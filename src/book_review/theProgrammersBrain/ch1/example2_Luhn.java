@@ -1,4 +1,4 @@
-package Book.theProgrammersBrain.ch1;
+package book_review.theProgrammersBrain.ch1;
 
 /**
  * 1) LTM 에서 관련된 지식 인출?

@@ -58,7 +58,7 @@ JVM이란 Java Virtual Machine의 줄임말으로, 우리가 작성한 소스프
 - 일단 다음과 같은 소스 프로그램이 있다고 하자.
 
   ``` java
-  package Whiteship_livestudy.week1;
+  package whiteship_livestudy.week1;
   
   public class Student {
       private String s_name;
