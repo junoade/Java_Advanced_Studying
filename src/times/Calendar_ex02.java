@@ -27,7 +27,8 @@ public class Calendar_ex02 {
     /**
      * 명시적으로 DateFormat 클래스에 대해, setTimeZone(출력되는 시간에 대해), Locale(출력되는 언어에 대해) 설정할 필요가 있다.
      * Calender 객체가 갖는 time 필드는 로컬에 대한 getTime()을 바탕으로
-     * Date(getTimeInMillis())를 반환하게 됨
+     * Date(getTimeInMillis())를 반환하게 됨<br/>
+     * <a>https://stackoverflow.com/questions/21349475/calendar-getinstancetimezone-gettimezoneutc-is-not-returning-utc-time</a>
      */
     public static void example02(){
         TimeZone tz = TimeZone.getTimeZone("UTC");
