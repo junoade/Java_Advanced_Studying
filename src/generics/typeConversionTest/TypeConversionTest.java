@@ -52,4 +52,16 @@ public class TypeConversionTest {
         Box<String> wildStrBox2 = (Box<String>) wildObjBox2;
 
     }
+
+    /**
+     * wild card가 사용된 제네릭 타입 간 형변환 가능
+     */
+    public void test04(){
+        Box<? extends Object> objBox = new Box<>();
+        Box<? extends String> strBox = new Box<>();
+
+        // Unchecked cast 경고
+        strBox = (Box<? extends String>) objBox;
+        objBox = (Box<? extends Object>) strBox;
+    }
 }
